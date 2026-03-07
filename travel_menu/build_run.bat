@@ -1,13 +1,11 @@
 @echo off
-chcp 1251 > log
-del log
+chcp 1251 > nul
 
-set MAIN="main.cpp" "travel.cpp" "travel_items.cpp" "travel_func.cpp"
 set EXE=example.exe
-set CHARSET="-finput-charset=utf-8 -fexec-charset=windows-1251"
+set CHARSET=-finput-charset=UTF-8 -fexec-charset=CP1251
 
-if exist %EXE% del %EXE%
+del %EXE% > nul
 
-g++ "%CHARSET%" "%MAIN%" -o %EXE%
+g++ %CHARSET% travel_items.cpp travel_items.hpp travel_functions.cpp travel_functions.hpp travel.hpp main.cpp -o %EXE%
 
 %EXE%

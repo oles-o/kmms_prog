@@ -1,14 +1,14 @@
 #include <clocale>
 #include <iostream>
 
-#include "travel.hpp"
-#include "travel_functions.hpp"
-#include "travel_items.hpp"
+#include "menu.hpp"
+#include "menu_functions.hpp"
+#include "menu_items.hpp"
 
 int main() {
 	std::setlocale(LC_ALL, "");
 	
-	const OLes::TravelItem* current = &OLes::MAIN;
+	const OLes::MenuItem* current = &OLes::MAIN;
 	do {
 		current = current->func(current);
 	} while (true);

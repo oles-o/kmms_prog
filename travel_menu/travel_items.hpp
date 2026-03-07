@@ -1,7 +1,10 @@
+#pragma once
+
 #include "travel.hpp"
 
 namespace OLes {
 	extern const TravelItem MAIN;
+	extern const TravelItem TRAVEL_MENU;
 	
 	extern const TravelItem TRAVEL;
 	extern const TravelItem EXIT;
@@ -15,6 +18,4 @@ namespace OLes {
 	extern const TravelItem TRAVEL_DALVOST_SAHALIN;
 	extern const TravelItem TRAVEL_DALVOST_HABAROVSK;
 	extern const TravelItem TRAVEL_DALVOST_BACK;
-
-
 }
