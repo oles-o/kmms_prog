@@ -1,5 +1,5 @@
 set(SOURCES 
-	long_number.cpp
+	test_long_number.cpp
 )
 
 add_executable(test_long_number ${SOURCES})

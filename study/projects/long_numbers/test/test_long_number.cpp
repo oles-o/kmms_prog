@@ -2,7 +2,7 @@
 
 #include "long_number.hpp"
 
-using biv::LongNumber;
+using OLes::LongNumber;
 
 class FComparisons : public testing::Test {
 	public:
